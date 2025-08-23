@@ -13,11 +13,6 @@ public class DungeonController {
     
     private final Solution solution = new Solution();
     
-    /**
-     * Calculate minimum HP required for a dungeon
-     * @param request Dungeon data as a list of lists
-     * @return Minimum HP required
-     */
     @PostMapping("/calculate-hp")
     public ResponseEntity<DungeonResponse> calculateMinimumHP(@RequestBody DungeonRequest request) {
         try {
